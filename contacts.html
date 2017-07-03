@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contacts</title>
+    <meta charset="utf-8">
+    <meta name = "format-detection" content = "telephone=no" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact-form.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/TMForm.js"></script>
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <script src="js/wow/wow.js"></script>
+    <script>
+        $(document).ready(function () {
+            if ($('html').hasClass('desktop')) {
+                new WOW().init();
+            }
+        });
+    </script>
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <div id="ie6-alert" style="width: 100%; text-align:center;">
+        <img src="http://beatie6.frontcube.com/images/ie6.jpg" alt="Upgrade IE 6" width="640" height="344" border="0" usemap="#Map" longdesc="http://die6.frontcube.com" />
+        <map name="Map" id="Map"><area shape="rect" coords="496,201,604,329" href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank" alt="Download Interent Explorer" /><area shape="rect" coords="380,201,488,329" href="http://www.apple.com/safari/download/" target="_blank" alt="Download Apple Safari" /><area shape="rect" coords="268,202,376,330" href="http://www.opera.com/download/" target="_blank" alt="Download Opera" /><area shape="rect" coords="155,202,263,330" href="http://www.mozilla.com/" target="_blank" alt="Download Firefox" />
+            <area shape="rect" coords="35,201,143,329" href="http://www.google.com/chrome" target="_blank" alt="Download Google Chrome" />
+        </map>
+    </div>
+    <![endif]-->
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-586CQ9P');
+    </script>
+    <!-- End Google Tag Manager -->    
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-586CQ9P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!--========================================================
+                          HEADER
+=========================================================-->
+<header id="header">
+    <!--
+    <div class="info">
+        <div class="container">
+            <div class="row">
+                <div class="grid_3">
+                    <address>9870 St Vincent Place, Glasgow, DC 45 Fr 45.</address>
+                </div>
+                <div class="grid_2">
+                    <span class="link"><a href="#">contact@demolink.org</a></span>
+                </div>
+                <div class="grid_2">
+                    <span class="phone">+1 800 559 6580</span>
+                </div>
+                <div class="grid_5">
+                    <ul class="socials1">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        -->
+    </div>
+    <div id="stuck_container">
+        <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="grid_12">
+                        <h1>
+                            <a href="home.html">
+                                <img id="main-logo-img" src="images/main-logo.png">
+                                    <!--<span class="main">ITcon</span><br>
+                                    <span class="secondary">internet consulting company</span>-->
+                            </a>
+                        </h1>
+                        <nav>
+                            <ul class="sf-menu">
+                                <li><a href="home.html">Home</a></li>
+                                <li><a href="aboutus.html">About</a>
+                                    <!--
+                                    <ul>
+                                        <li><a href="#">History</a></li>
+                                        <li><a href="#">News</a>
+                                            <ul>
+                                                <li><a href="#">Latest</a></li>
+                                                <li><a href="#">Archive</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Testimonials</a></li>
+                                    </ul>
+                                    -->
+                                </li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="projects.html">Projects</a></li>
+                                 <!--<li><a href="blogs.html">Blog</a></li>-->
+                                <li class="current"><a href="contacts.html">Contacts</a></li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--========================================================
+                          CONTENT
+=========================================================-->
+<section id="content" class="common">
+    <div class="wrapper8">
+        <div class="container">
+            <div class="row">
+                <div class="grid_6">
+                    <div class="header1">
+                        <h2>Contact info</h2>
+                    </div>
+                    <div class="google-map_contacts">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d24214.807650104907!2d-73.94846048422478!3d40.65521573400813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1395650655094"
+                                style="border:0"></iframe>
+                    </div>
+                    <div class="address-block">
+                        <address>
+                            <span class="our-address">Elgin Ave,<br>Burnaby, BC V5H 3S5.</span>
+                            <span class="numbers telephone">Freephone:</span><span>+1 800 559 6580</span><br>
+                            <span class="numbers telephone">Telephone:</span><span>+1 800 603 6035</span><br>
+                            <span class="numbers fax">FAX:</span><span>+1 800 889 9898</span><br>
+                            <span>E-mail: </span><span><a href="#" class="simple-link">mail@demolink.org</a></span>
+                        </address>
+                    </div>
+                </div>
+                <div class="grid_6">
+                    <div class="header1">
+                        <h2>Contact form</h2>
+                    </div>
+                    <form id="contact-form">
+                        <div class="contact-form-loader"></div>
+                        <fieldset>
+                            <div class="row">
+                                <div class="grid_5">
+                                    <label class="name">
+                                        <input type="text" name="name" placeholder="Name:*"
+                                               data-constraints="@Required @JustLetters"/>
+                                        <span class="empty-message">*This field is required.</span>
+                                    </label>
+                                    <label class="email">
+                                        <input type="text" name="email" placeholder="Email:*" value=""
+                                               data-constraints="@Required @Email"/>
+                                        <span class="empty-message">*This field is required.</span>
+                                        <span class="error-message">*This is not a valid email.</span>
+                                    </label>
+                                    <label class="phone">
+                                        <input type="text" name="phone" placeholder="Phone:*" value=""
+                                               data-constraints="@Required @JustNumbers"/>
+                                        <span class="empty-message">*This field is required.</span>
+                                        <span class="error-message">*This is not a valid phone.</span>
+                                    </label>
+                                </div>
+                                <div class="grid_4">
+
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="grid_6">
+                                    <label class="message">
+                                        <textarea name="message" placeholder="Message:"
+                                                  data-constraints='@Required @Length(min=20,max=999999)'></textarea>
+                                        <span class="empty-message">*This field is required.</span>
+                                        <span class="error-message">*The message is too short.</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- <label class="recaptcha"><span class="empty-message">*This field is required.</span></label> -->
+                            <div class="contact-form-buttons">
+                                <a href="#" data-type="submit" class="btn-big">Send</a>
+                            </div>
+                        </fieldset>
+                        <div class="modal fade response-message">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal"
+                                                aria-hidden="true">&times;</button>
+                                        <h4 class="modal-title">Modal title</h4>
+                                    </div>
+                                    <div class="modal-body">
+                                        You message has been sent! We will be in touch soon.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!--========================================================
+                          FOOTER
+=========================================================-->
+ <footer id="footer">
+        <div class="wrapper wow fadeInLeft">
+            <div class="container">
+                <div class="row">
+                    <div class="grid_3 __float-right">
+                        <span class="h8">About us</span>
+                        <ul class="list2">
+                            <li><a href="#">Customer focus</a></li>
+                            <li><a href="#">Performance</a></li>
+                            <li><a href="#">Affiliates</a></li>
+                            <li><a href="#">CV Review</a></li>
+                        </ul>
+                    </div>
+                    <div class="grid_3 __float-right">
+                        <span class="h8">Career Contact</span>
+                        <address>
+                            <span>Recuitments Office India</span>
+                            <span>Jagbir Paul</span>
+                            <span><a href="#">jagbir.singh@mindnerves.com</a></span>
+                        </address>
+                    </div>
+                    <div class="grid_3 __float-right">
+                        <span class="h8">Business Contact</span>
+                        <address>
+                            <span>Amit Goyal</span>
+                            <span>2nd Floor, Nitron Classic</span>
+                            <span>Hadapsar, Pune-410013</span>
+                            <span>Phone:+91 902 802 2291</span>
+                            <span>Phone:+91 988 114 9984</span>
+                            <span><a href="#">amit.goyal@mindnerves.com</a></span>
+                        </address>
+                    </div>                    
+                    <div class="grid_3">
+                        <span class="h8">Follow us</span>
+                        <ul class="socials1">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                        <div class="privacy-block">
+                            &copy; <span id="copyright-year"></span> <a href="privacy.html">Privacy policy</a>
+                            <!--{%FOOTER_LINK} -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>

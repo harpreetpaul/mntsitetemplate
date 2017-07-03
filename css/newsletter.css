@@ -1,0 +1,115 @@
+.newsletter-form {
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+  margin-top: 23px;
+  position: relative;
+  /* Submit Button GO */
+  /* Error message style */
+  /* Error message appears */
+}
+.newsletter-form #form1 {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.newsletter-form .button {
+  background: #03c7de;
+  display: inline-block;
+  font: 400 14px/18px "Roboto Condensed", sans-serif;
+  text-transform: lowercase;
+  color: #ffffff;
+  margin-left: 3px;
+  padding: 9px 0 7px;
+  width: 93px;
+  height: 39px;
+  border: 1px solid #d2d2d2;
+  outline: none !important;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+}
+@media (max-width: 979px) {
+  .newsletter-form .button {
+    margin-left: 0;
+  }
+}
+.newsletter-form .button:hover {
+  background: #039aac;
+  color: #ffffff;
+}
+.newsletter-form .success {
+  position: absolute;
+  font-size: 11px;
+  line-height: 14px;
+  bottom: -22px;
+  left: 39px;
+  color: #03c7de;
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .newsletter-form .success {
+    font-size: 10px;
+    line-height: 11px;
+    bottom: -20px;
+  }
+}
+@media (max-width: 1199px) {
+  .newsletter-form .success {
+    left: 0;
+  }
+}
+.newsletter-form input {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font: 400 14px/24px "Exo", sans-serif;
+  color: #979797;
+  padding: 6px 15px 5px 15px;
+  width: 427px;
+  margin-left: 39px;
+  border-radius: 0;
+  box-shadow: none;
+  -webkit-appearance: none;
+  border: 1px solid #d2d2d2;
+  background: #ffffff;
+  height: 39px;
+}
+@media (max-width: 1199px) {
+  .newsletter-form input {
+    margin-left: 0;
+    width: 355px;
+  }
+}
+@media (max-width: 979px) {
+  .newsletter-form input {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .newsletter-form input {
+    width: 100%;
+  }
+}
+.newsletter-form input:focus {
+  outline: none;
+}
+.newsletter-form .name {
+  position: relative;
+}
+.newsletter-form .email {
+  position: relative;
+}
+.newsletter-form .error {
+  text-align: left;
+  font-size: 9px;
+  line-height: 9px;
+  position: absolute;
+  top: 0;
+  right: 5px;
+  display: none;
+  color: #333333;
+}
+.newsletter-form .invalid .error {
+  display: block;
+}

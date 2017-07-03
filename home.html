@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/camera.css">
+    <link rel="stylesheet" href="css/newsletter.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mnt.css">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <script src="js/camera.js"></script>
+    <script src="js/sForm.js"></script>
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <script src="js/jquery.mobile.customized.min.js"></script>
+    <script src="js/wow/wow.js"></script>
+    <script>
+        $(document).ready(function () {
+            if ($('html').hasClass('desktop')) {
+                new WOW().init();
+            }
+        });
+    </script>
+    <!--<![endif]-->
+    <script>
+        $(document).ready(function () {
+            $('#camera_wrap').camera({
+                loader: true,
+                pagination: false,
+                minHeight: '',
+                thumbnails: false,
+                height: '43.1875%',
+                caption: true,
+                navigation: true,
+                fx: 'simpleFade'
+            });
+            $('#form1').sForm({
+                ownerEmail:'#',
+                sitename:'sitename.link'
+            });
+        });
+    </script>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/ie.css">
+    <div id="ie6-alert" style="width: 100%; text-align:center;">
+    <img src="http://beatie6.frontcube.com/images/ie6.jpg" alt="Upgrade IE 6" width="640" height="344" border="0" usemap="#Map" longdesc="http://die6.frontcube.com" />
+      <map name="Map" id="Map"><area shape="rect" coords="496,201,604,329" href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank" alt="Download Interent Explorer" /><area shape="rect" coords="380,201,488,329" href="http://www.apple.com/safari/download/" target="_blank" alt="Download Apple Safari" /><area shape="rect" coords="268,202,376,330" href="http://www.opera.com/download/" target="_blank" alt="Download Opera" /><area shape="rect" coords="155,202,263,330" href="http://www.mozilla.com/" target="_blank" alt="Download Firefox" />
+        <area shape="rect" coords="35,201,143,329" href="http://www.google.com/chrome" target="_blank" alt="Download Google Chrome" />
+      </map>
+  </div>
+    <![endif]-->
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-586CQ9P');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-586CQ9P" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!--========================================================
+                          HEADER
+=========================================================-->
+    <header id="header" class="main-page">
+        <!--<div class="info">
+            <div class="container">
+                <div class="row">
+                    <div class="grid_3">
+                        <address>9870 St Vincent Place, Glasgow, DC 45 Fr 45.</address>
+                    </div>
+                    <div class="grid_2">
+                        <span class="link"><a href="#">contact@demolink.org</a></span>
+                    </div>
+                    <div class="grid_2">
+                        <span class="phone">+1 800 559 6580</span>
+                    </div>
+                    <div class="grid_5">
+                        <ul class="socials1">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <div id="stuck_container">
+            <div class="wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="grid_12">
+                            <h1>
+                                <a href="home.html">
+                                    <img id="main-logo-img" src="images/main-logo.png">
+                                    <!--<span class="main-logo">1111111111111111</span><br> -->
+                                    <!-- <span class="secondary">internet consulting company</span> -->
+                                </a>
+                            </h1>
+                            <nav>
+                                <ul class="sf-menu">
+                                    <li class="current"><a href="home.html">Home</a></li>
+                                    <li><a href="aboutus.html">About</a>
+                                        <!--   <ul>
+                                            <li><a href="#">History</a></li>
+                                            <li><a href="#">News</a>
+                                                <ul>
+                                                    <li><a href="#">Latest</a></li>
+                                                    <li><a href="#">Archive</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Testimonials</a></li>
+                                        </ul>
+                                    </li>-->
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="projects.html">Projects</a></li>
+                                         <!--<li><a href="blogs.html">Blog</a></li>-->
+                                        <li><a href="contacts.html">Contacts</a></li>
+                                </ul>
+                                <div class="clearfix"></div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--========================================================
+                          CONTENT
+=========================================================-->
+    <section id="content">
+        <div class="slider-wrapper">
+            <div id="camera_wrap">
+                <div data-src="images/slider4.jpg">
+                    <!--<div data-src="images/slider2.png">-->
+                    <div class="caption fadeIn">
+                        <div class="container">
+                            <div class="row">
+                                <div class="grid_8 preffix_2">
+                                    <span class="pre-header">#LocalGlobal</span>
+                                    <h6>Your Local<br>Global business partner<br></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-src="images/slider4.jpg">
+                    <!--<div data-src="images/slider3.png">-->
+                    <div class="caption fadeIn">
+                        <div class="container">
+                            <div class="row">
+                                <div class="grid_8 preffix_2">
+                                    <span class="pre-header">#TechExperience</span>
+                                    <h6>Get benefited with our<br>deep rooted Experience<br> in Technology<br></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MN Addded here -->
+                <div data-src="images/slider4.jpg">
+                    <div class="caption fadeIn">
+                        <div class="container">
+                            <div class="row">
+                                <div class="grid_8 preffix_2">
+                                    <span class="pre-header">#WelcomeStart</span>
+                                    <h6>Your Good Start<br>Gauranteed with us<br></h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- MN Addded ends here -->
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="banner1">
+            <div id="bottom_banner">
+                <div class="wow fadeInLeft">
+                    <div class="container">
+                        <div class="row">
+                            <div class="grid_3">
+                                <div class="post1">
+                                    <img class="resize" src="images/page1_img1.png" alt="" />
+                                    <span class="header">
+                                    <a href="#">
+                                        <span class="main">Our</span>
+                                    <span class="secondary">vision</span>
+                                    </a>
+                                    </span>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="grid_3">
+                                <div class="post1">
+                                    <img src="images/page1_img2.png" alt="" />
+                                    <span class="header">
+                                    <a href="#">
+                                        <span class="main">Our</span>
+                                    <span class="secondary">values</span>
+                                    </a>
+                                    </span>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="grid_3">
+                                <div class="post1">
+                                    <img src="images/page1_img3.png" alt="" />
+                                    <span class="header">
+                                    <a href="#">
+                                        <span class="main">Our</span>
+                                    <span class="secondary">approach</span>
+                                    </a>
+                                    </span>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="grid_3">
+                                <div class="post1">
+                                    <img src="images/page1_img4.png" alt="" />
+                                    <span class="header">
+                                    <a href="#">
+                                        <span class="main">Our</span>
+                                    <span class="secondary">support</span>
+                                    </a>
+                                    </span>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--
+        <div class="wrapper1 wow fadeInLeft">
+            <div class="container">
+                <div class="row">
+                    <div class="grid_8">
+                        <span class="font1"><a href="#">FIND THE BEST deals in your area</a></span>
+                    </div>
+                    <div class="grid_4">
+                        <span class="font2">Enter your address to view local OFFERS & PRICING</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+        <div class="banner2_1 wow fadeInLeft">
+            <div class="container">
+                <!-- 
+                <div class="row">
+                    <div class="grid_12">
+                        <div class="post2">
+                            <div class="row">
+                                <div class="grid_10">
+                                    <h2>Organizations are pressed to reinvent themselves</h2>
+                                    <h3><a href="#">AMID INCREASING GLOBAL COMPETITION, REGULATORY PRESSURES, AND CUSTOMER EXPECTATIONS</a></h3>
+                                    <p>Our consultants help transform businesses by enhancing productivity, unlocking innovation, 
+                                        and driving corporate performance. MNT Business Consulting works with leading enterprises 
+                                        to enhance productivity by reinventing their operating models and processes.</p>
+                                </div>
+                                <div class="grid_2">
+                                    <a class="btn-big" href="#">Click here</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+                -->
+
+                <div class="row">
+                    <div class="grid_12">
+                        <div class="post3">
+                            <div class="row">
+                                <div class="grid_6">
+                                    <h2>Our Consulting provides client-focused services</h2>
+                                    <span class="header"><a href="#">It is MindNerves philosophy that "togetherness of mind and nerves"</a></span>
+                                    <p>With this in mind, the MindNerves Group has developed and marketed a wide range of products, 
+                                        all founded on the same basic philosophy of learning and developing True to its motto - Only the best is good enough - the our Group has emphasised the importance of high quality throughout, , ensuring that consumers/customer returns to our products/services again and again. </p>
+                                    <!--<a class="btn-big __inset1" href="#">Read more</a>-->
+                                </div>
+                                
+                                <div class="grid_6">
+                                   
+                                <!--
+                                     <div class="gallery_image __inset1">
+                                        <a href="gallery1.html">
+                                            <img src="images/page1_img5.png" alt="" />
+                                            <div class="hover">
+                                                <span class="slogan">web<br>development</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="gallery_image __inset1">
+                                        <a href="gallery1.html">
+                                            <img src="images/page1_img6.png" alt="" />
+                                            <div class="hover">
+                                                <span class="slogan">website<br>protection</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="gallery_image __inset1">
+                                        <a href="gallery1.html">
+                                            <img src="images/page1_img7.png" alt="" />
+                                            <div class="hover">
+                                                <span class="slogan">social<br>media</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="gallery_image __inset1">
+                                        <a href="gallery1.html">
+                                            <img src="images/page1_img8.png" alt="" />
+                                            <div class="hover">
+                                                <span class="slogan">e-commerce<br>optimiztion</span>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    -->
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner2 wow fadeInLeft">
+            <div class="container">
+                <div class="row">
+                    <div class="grid_6">
+                        <div class="post3 __inset1">
+                            <h2>We will show right direction to your business.</h2>
+                            <span class="header"><a href="#">Success is never achieved by the size of our brain but it is always achieved by the quality of our thoughts.</a></span>
+                            <p>
+                                Many CEOs moan that business is tough and growth is hard to find. Yet there’s a very quick way for you to substantially increase
+                                your company’s revenue. Any company can do it, it’s fast to implement, and it’s usually extremely
+                                inexpensive to do. Yet despite these factors, in my experience most companies do not come
+                                even close to making the most of this revenue maximization technique.</p>
+                            <!--<a class="btn-big __inset1" href="#">Read more</a>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner3 wow fadeInLeft">
+            <div class="container">
+                <div class="row">
+                    <div class="grid_6">
+                        <div class="slogan">
+                            <span class="header">Interested in our services?</span>
+                            <span class="secondary">Fill in your email or phone and we will reach back.</span>
+                            <p><!--Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae--></p>
+                        </div>
+                    </div>
+                    <div class="grid_6">
+                        <div class="newsletter-form" id="newsletter-form1">
+                            <form id="form1">
+                                <div class="success">Your subscribe request has been sent!</div>
+                                <fieldset>
+                                    <label class="email">
+                                    <input type="email">
+                                    <span class="error">*This is not a valid email address.</span></label>
+                                    <a href="#" class="button" data-type="submit">submit</a>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--
+        <div class="banner4 wow fadeInLeft">
+            <div class="container">
+                <div class="row">
+                    <div class="grid_3">
+                        <a href="#"><img src="images/page1_img10.png" alt="" /></a>
+                    </div>
+                    <div class="grid_3">
+                        <a href="#"><img src="images/page1_img11.png" alt="" /></a>
+                    </div>
+                    <div class="grid_3">
+                        <a href="#"><img src="images/page1_img12.png" alt="" /></a>
+                    </div>
+                    <div class="grid_3">
+                        <a href="#"><img src="images/page1_img13.png" alt="" /></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+
+    </section>
+
+
+    <!--========================================================
+                          FOOTER
+=========================================================-->
+    <footer id="footer">
+        <div class="wrapper wow fadeInLeft">
+            <div class="container">
+                <div class="row">
+                    <div class="grid_3 __float-right">
+                        <span class="h8">About us</span>
+                        <ul class="list2">
+                            <li><a href="#">Customer focus</a></li>
+                            <li><a href="#">Performance</a></li>
+                            <li><a href="#">Affiliates</a></li>
+                            <li><a href="#">CV Review</a></li>
+                        </ul>
+                    </div>
+                    <div class="grid_3 __float-right">
+                        <span class="h8">Career Contact</span>
+                        <address>
+                            <span>Recuitments Office India</span>
+                            <span>Jagbir Paul</span>
+                            <span><a href="#">jagbir.singh@mindnerves.com</a></span>
+                        </address>
+                    </div>
+                    <div class="grid_3 __float-right">
+                        <span class="h8">Business Contact</span>
+                        <address>
+                            <span>Amit Goyal</span>
+                            <span>2nd Floor, Nitron Classic</span>
+                            <span>Hadapsar, Pune-410013</span>
+                            <span>Phone:+91 902 802 2291</span>
+                            <span>Phone:+91 988 114 9984</span>
+                            <span><a href="#">amit.goyal@mindnerves.com</a></span>
+                        </address>
+                    </div>                    
+                    <div class="grid_3">
+                        <span class="h8">Follow us</span>
+                        <ul class="socials1">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                        <div class="privacy-block">
+                            &copy; <span id="copyright-year"></span> <a href="privacy.html">Privacy policy</a>
+                            <!--{%FOOTER_LINK} -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-7078796-5']);
+        _gaq.push(['_trackPageview']);
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</body>
+
+</html>

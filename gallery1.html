@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gallery 1</title>
+    <meta charset="utf-8">
+    <meta name = "format-detection" content = "telephone=no" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-migrate-1.2.1.js"></script>
+    <!-- start gallery scripts -->
+    <link rel="stylesheet" href="gallery/css/tmMultimediaGallery.css">
+    <script src="gallery/js/isotope.pkgd.min.js"></script>
+    <script src="gallery/js/tmFileList.js"></script>
+    <script src="gallery/js/tmPaginationGenerator.js"></script>
+    <script src="gallery/js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="gallery/js/jquery.ui.touch-punch.js"></script>
+    <script src="gallery/js/tmDraggablePagination.js"></script>
+    <script src="gallery/js/tmMultimediaGallery.js"></script>
+    <script src="gallery/js/tmMultimediaGallery_init.js"></script>
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <script src="gallery/js/jquery.touchSwipe.min.js"></script>
+    <!--<![endif]-->
+    <!-- end gallery scripts -->
+    <!--[if (gt IE 9)|!(IE)]><!-->
+    <script src="js/wow/wow.js"></script>
+    <script>
+        $(document).ready(function () {
+            if ($('html').hasClass('desktop')) {
+                new WOW().init();
+            }
+        });
+    </script>
+    <!--<![endif]-->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <div id="ie6-alert" style="width: 100%; text-align:center;">
+        <img src="http://beatie6.frontcube.com/images/ie6.jpg" alt="Upgrade IE 6" width="640" height="344" border="0" usemap="#Map" longdesc="http://die6.frontcube.com" />
+        <map name="Map" id="Map"><area shape="rect" coords="496,201,604,329" href="http://www.microsoft.com/windows/internet-explorer/default.aspx" target="_blank" alt="Download Interent Explorer" /><area shape="rect" coords="380,201,488,329" href="http://www.apple.com/safari/download/" target="_blank" alt="Download Apple Safari" /><area shape="rect" coords="268,202,376,330" href="http://www.opera.com/download/" target="_blank" alt="Download Opera" /><area shape="rect" coords="155,202,263,330" href="http://www.mozilla.com/" target="_blank" alt="Download Firefox" />
+            <area shape="rect" coords="35,201,143,329" href="http://www.google.com/chrome" target="_blank" alt="Download Google Chrome" />
+        </map>
+    </div>
+    <![endif]-->
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-586CQ9P');
+    </script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-586CQ9P" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<!--========================================================
+                          HEADER
+=========================================================-->
+<header id="header">
+    <div class="info">
+        <div class="container">
+            <div class="row">
+                <div class="grid_3">
+                    <address>9870 St Vincent Place, Glasgow, DC 45 Fr 45.</address>
+                </div>
+                <div class="grid_2">
+                    <span class="link"><a href="#">contact@demolink.org</a></span>
+                </div>
+                <div class="grid_2">
+                    <span class="phone">+1 800 559 6580</span>
+                </div>
+                <div class="grid_5">
+                    <ul class="socials1">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="stuck_container">
+        <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="grid_12">
+                        <h1>
+                            <a href="home.html">
+                                <span class="main">ITcon</span><br>
+                                <span class="secondary">internet consulting company</span>
+                            </a>
+                        </h1>
+                        <nav>
+                            <ul class="sf-menu">
+                                <li><a href="home.html">Home</a></li>
+                                <li><a href="aboutus.html">About</a>
+                                    <ul>
+                                        <li><a href="#">History</a></li>
+                                        <li><a href="#">News</a>
+                                            <ul>
+                                                <li><a href="#">Latest</a></li>
+                                                <li><a href="#">Archive</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Testimonials</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="projects.html">Projects</a></li>
+                                <li><a href="blogs.html">Blog</a></li>
+                                <li><a href="contacts.html">Contacts</a></li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!--========================================================
+                          CONTENT
+=========================================================-->
+<div class="galleryContainer">
+    <!-- spinner -->
+    <div class="imgSpinner"></div>
+    <!-- close button -->
+    <a href="" class="close-icon"><i class="fa fa-times"></i></a>
+
+    <!-- Navigation -->
+    <!-- previous button -->
+    <a href="#" class="prevButton">
+        <i class="fa fa-angle-left"></i>
+    </a>
+    <!-- next button -->
+    <a href="#" class="nextButton">
+        <i class="fa fa-angle-right"></i>
+    </a>
+
+    <!-- main gallery and image holder -->
+    <div class="galleryHolder">
+        <div class="imageHolder">
+            <img src="images/gallery1/full/48791-big.jpg" alt>
+        </div>
+    </div>
+
+    <div class="carousel-holder">
+        <div class="carousel inner">
+            <!-- holder for pagination -->
+        </div>
+        <a href="#" class="prev"><i class="fa fa-angle-left"></i></a>
+        <a href="#" class="next"><i class="fa fa-angle-right"></i></a>
+    </div>
+
+</div>
+
+<section id="content" class="common">
+    <div class="container">
+        <div class="wrapper8">
+            <div class="row">
+                <div class="grid_12">
+                    <div class="header1">
+                        <h2>Gallery 1</h2>
+                    </div>
+                    <div class="__relative">
+                        <div class="content-load-spinner"></div>
+                        <div class="inner">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--========================================================
+                          FOOTER
+=========================================================-->
+ <footer id="footer">
+        <div class="wrapper wow fadeInLeft">
+            <div class="container">
+                <div class="row">
+                    <div class="grid_3 __float-right">
+                        <span class="h8">About us</span>
+                        <ul class="list2">
+                            <li><a href="#">Customer focus</a></li>
+                            <li><a href="#">Performance</a></li>
+                            <li><a href="#">Affiliates</a></li>
+                            <li><a href="#">CV Review</a></li>
+                        </ul>
+                    </div>
+                    <div class="grid_3 __float-right">
+                        <span class="h8">Career Contact</span>
+                        <address>
+                            <span>Recuitments Office India</span>
+                            <span>Jagbir Paul</span>
+                            <span><a href="#">jagbir.singh@mindnerves.com</a></span>
+                        </address>
+                    </div>
+                    <div class="grid_3 __float-right">
+                        <span class="h8">Business Contact</span>
+                        <address>
+                            <span>Amit Goyal</span>
+                            <span>2nd Floor, Nitron Classic</span>
+                            <span>Hadapsar, Pune-410013</span>
+                            <span>Phone:+91 902 802 2291</span>
+                            <span>Phone:+91 988 114 9984</span>
+                            <span><a href="#">amit.goyal@mindnerves.com</a></span>
+                        </address>
+                    </div>                    
+                    <div class="grid_3">
+                        <span class="h8">Follow us</span>
+                        <ul class="socials1">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                        <div class="privacy-block">
+                            &copy; <span id="copyright-year"></span> <a href="privacy.html">Privacy policy</a>
+                            <!--{%FOOTER_LINK} -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script type="text/javascript">
+    $(function () {
+        pathThumb = 'images/gallery1/';
+        pathFull = 'images/gallery1/full/';
+    })
+</script>
+
+<script src="js/script.js"></script>
+</body>
+</html>
