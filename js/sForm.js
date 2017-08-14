@@ -8,7 +8,7 @@
 			
 		o=$.extend({
 			ownerEmail:'#'
-			,mailHandlerURL:'bat/MailHandler-sub.php'
+			,mailHandlerURL:'api/MailHandler-sub.php'
 		},o)
 		
 		submit.click(function(){
@@ -106,6 +106,6 @@
 $(window).load(function(){
 	$('#form1').sForm({			
 		ownerEmail:'#'
-		,sitename:'sitename.link'
+		,sitename:'http://mindnerves.ca'
 	})
 })

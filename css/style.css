@@ -228,7 +228,7 @@ h6 {
   }
 }
 #header .info {
-  padding: 16px 0 6px;
+  padding: 6px 0 0px;
   background: #ffffff;
   font: 300 12px/14px "Roboto Condensed", sans-serif;
   color: #333333;
@@ -1423,6 +1423,11 @@ nav {
   margin-bottom: 16px;
   text-transform: capitalize;
 }
+
+#footer address span a{
+  text-transform: none;
+}
+
 #footer .list2 {
   margin-top: 22px;
 }

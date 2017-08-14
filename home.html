@@ -5,6 +5,11 @@
     <title>Home</title>
     <meta charset="utf-8">
     <meta name="format-detection" content="telephone=no" />
+    <meta name="description" content="Your Local Global Outsourcing Partner for IT Counsulting, Services and Solutions, Business Application Development, Business Process Automation, CRM ERP
+    Implementation, Software Development, Android Development, IOS Development, QA Outsorcing based in North America">
+    <meta name="keywords" content="MindNerves, Product Development, Software Development, Applicaation Services, Android Development, Java Experts, Play Framework Experts,  Software Resources Augmentation
+    Java Development, ETL, Big Data, Cloud AWS, Hadoop, Spark, Android Development">
+    <meta name="author" content="MindNerves, Burnaby, Canada">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/grid.css">
     <link rel="stylesheet" href="css/camera.css">
@@ -41,7 +46,7 @@
             });
             $('#form1').sForm({
                 ownerEmail:'#',
-                sitename:'sitename.link'
+                sitename:'http://mindnerves.ca'
             });
         });
     </script>
@@ -64,6 +69,29 @@
         })(window,document,'script','dataLayer','GTM-586CQ9P');
     </script>
     <!-- End Google Tag Manager -->
+
+     <script type="text/javascript">
+        $(document).ready(function(){
+
+            $('#form2').submit(function (e) {
+                alert("hello");
+                e.preventDefault();
+                $.ajax({
+                    type: 'POST',
+                    url: '/api/sendAMail.php',
+                    data: frm.serialize(),
+                    success: function (data) {
+                        console.log('Submission was successful.');
+                        console.log(data);
+                    },
+                    error: function (data) {
+                        console.log('An error occurred.');
+                        console.log(data);
+                    },
+                });
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -77,30 +105,30 @@
                           HEADER
 =========================================================-->
     <header id="header" class="main-page">
-        <!--<div class="info">
+        <div class="info">
             <div class="container">
                 <div class="row">
                     <div class="grid_3">
-                        <address>9870 St Vincent Place, Glasgow, DC 45 Fr 45.</address>
+                        <address>Burnaby, BC - V5H 3S5, Canada</address>
                     </div>
                     <div class="grid_2">
-                        <span class="link"><a href="#">contact@demolink.org</a></span>
+                        <span class="link"><a href="#" id="eMail"></a></span>
                     </div>
                     <div class="grid_2">
-                        <span class="phone">+1 800 559 6580</span>
+                        <span class="phone" id="contactNumber"></span>
                     </div>
                     <div class="grid_5">
                         <ul class="socials1">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                             <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            <!--<li><a href="#"><i class="fa fa-pinterest"></i></a></li>-->
                             <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </div>-->
+        </div>
         <div id="stuck_container">
             <div class="wrapper">
                 <div class="container">
@@ -116,7 +144,7 @@
                             <nav>
                                 <ul class="sf-menu">
                                     <li class="current"><a href="home.html">Home</a></li>
-                                    <li><a href="aboutus.html">About</a>
+                                    <li><a href="aboutus.html">About Us</a>
                                         <!--   <ul>
                                             <li><a href="#">History</a></li>
                                             <li><a href="#">News</a>
@@ -127,11 +155,14 @@
                                             </li>
                                             <li><a href="#">Testimonials</a></li>
                                         </ul>
-                                    </li>-->
-                                        <li><a href="services.html">Services</a></li>
-                                        <li><a href="projects.html">Projects</a></li>
-                                        <!--<li><a href="blogs.html">Blog</a></li>-->
-                                        <li><a href="contacts.html">Contacts</a></li>
+                                        </ul>-->
+                                    </li>
+                                    <li><a href="services.html">Our Services</a></li>
+                                    <li><a href="projects.html">Projects</a></li>
+                                    <!--
+                                    <li><a href="blogs.html">Blog</a></li>
+                                    -->
+                                    <li><a href="contacts.html">Contacts</a></li>
                                 </ul>
                                 <div class="clearfix"></div>
                             </nav>
@@ -191,11 +222,12 @@
             </div>
             <div class="clearfix"></div>
         </div>
+        
         <div class="banner1">
             <div id="bottom_banner">
                 <div class="wow fadeInLeft">
                     <div class="container">
-                        <div class="row">
+                       <!-- <div class="row">
                             <div class="grid_3">
                                 <div class="post1">
                                     <img class="resize" src="images/page1_img1.png" alt="" />
@@ -245,10 +277,12 @@
                                 </div>
                             </div>
                         </div>
+                        -->
                     </div>
                 </div>
             </div>
         </div>
+        
         <!--
         <div class="wrapper1 wow fadeInLeft">
             <div class="container">
@@ -423,41 +457,23 @@
         <div class="wrapper wow fadeInLeft">
             <div class="container">
                 <div class="row">
-                    <div class="grid_3 __float-right">
-                        <span class="h8">About us</span>
+                    <div class="grid_3">
+                        <span class="h8">Quick Links</span>
                         <ul class="list2">
-                            <li><a href="#">Customer focus</a></li>
-                            <li><a href="#">Performance</a></li>
-                            <li><a href="#">Affiliates</a></li>
-                            <li><a href="#">CV Review</a></li>
+                            <li><a href="home.html">Home</a></li>
+                            <li><a href="aboutus.html">About Us</a></li>
+                            <li><a href="services.html">Our Services</a></li>
+                            <li><a href="contacts.html">Contact Us</a></li>
                         </ul>
                     </div>
-                    <div class="grid_3 __float-right">
-                        <span class="h8">Career Contact</span>
-                        <address>
-                            <span>Recuitments Office India</span>
-                            <span>Jagbir Paul</span>
-                            <span><a href="#">jagbir.singh@mindnerves.com</a></span>
-                        </address>
-                    </div>
-                    <div class="grid_3 __float-right">
-                        <span class="h8">Business Contact</span>
-                        <address>
-                            <span>Amit Goyal</span>
-                            <span>2nd Floor, Nitron Classic</span>
-                            <span>Hadapsar, Pune-410013</span>
-                            <span>Phone:+91 902 802 2291</span>
-                            <span>Phone:+91 988 114 9984</span>
-                            <span><a href="#">amit.goyal@mindnerves.com</a></span>
-                        </address>
-                    </div>
+
                     <div class="grid_3">
                         <span class="h8">Follow us</span>
                         <ul class="socials1">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
                             <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                            <!--<li><a href="#"><i class="fa fa-pinterest"></i></a></li>-->
                             <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
                         </ul>
                         <div class="privacy-block">
@@ -465,6 +481,21 @@
                             <!--{%FOOTER_LINK} -->
                         </div>
                     </div>
+
+                    <div class="grid_3">
+                        <span class="h8">Business Contact</span>
+                        <address>
+                            <span>Burnaby, BC - V5H 3S5, Canada </span>
+                            <span id="contactNumber-f"></span>
+                            <span><a href="#" id="eMail-f"></a></span>
+                        </address>
+                    </div>           
+
+                    <div class="grid_3">
+                        <span class="h8">Affiliated To</span>
+                        <span><a href="http://www.mindnerves.com">MindNerves Technology Service</a></span>
+                    </div> 
+
                 </div>
             </div>
         </div>

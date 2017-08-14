@@ -36,7 +36,7 @@ $(function () {
 
 
 
-/* DEVICE.JS AND SMOOTH SCROLLIG
+/* DEVICE.JS AND SMOOTH SCROLLING
 ========================================================*/
 include('js/jquery.mousewheel.min.js');
 include('js/jquery.simplr.smoothscroll.min.js');
@@ -49,11 +49,17 @@ $(function () {
   }   
 });
 
-/* Copyright Year
+/* Copyright Year, Phone and eMail
 ========================================================*/
 var currentYear = (new Date).getFullYear();
 $(document).ready(function() {
   $("#copyright-year").text( (new Date).getFullYear() );
+  $("#eMail").text( "info@mindnerves.ca" );
+  $("#contactNumber").text( "+1 604-220-9408" );
+   $("#eMail2").text( "info@mindnerves.ca" );
+  $("#contactNumber2").text( "+1 604-220-9408" );
+   $("#eMail-f").text( "info@mindnerves.ca" );
+  $("#contactNumber-f").text( "+1 604-220-9408" );
 });
 
 
